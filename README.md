@@ -39,13 +39,10 @@ I'm a developer focused on the **Open-source Android ecosystem**. I love customi
 
 ### 📊 GitHub Stats
 
-![Adriel's Stats](https://github-readme-stats.vercel.app/api?username=adrielGGmotion&show_icons=true&hide_border=true&title_color=ff9f43&icon_color=ff9f43&text_color=9f9f9f&bg_color=151515)
+![](https://github-readme-stats.vercel.app/api?username=adrielGGmotion&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=adrielGGmotion&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=adrielGGmotion&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=adrielGGmotion&layout=compact&hide_border=true&title_color=ff9f43&icon_color=ff9f43&text_color=9f9f9f&bg_color=151515&langs_count=6)
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=adrielGGmotion&style=flat-square&color=orange&label=PROFILE+VIEWS" alt="Profile Views" />
-</div>
 
 ---
 
