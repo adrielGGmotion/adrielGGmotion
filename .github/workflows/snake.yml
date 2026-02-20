@@ -1,4 +1,5 @@
 name: Generate Snake
+yaml permissions: contents: write
 
 on:
   schedule:
