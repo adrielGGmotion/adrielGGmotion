@@ -74,7 +74,7 @@ Developer focused on the **open-source Android ecosystem**. I like tearing apps 
 <div align="center">
 
 <a href="https://www.last.fm/user/adrielgg_motion">
-  <img src="https://lastfm-recently-played.vercel.app/api?user=adrielgg_motion&count=5&width=400" alt="Last.fm recently played" />
+  <img src="https://lastfm-now-playing.vercel.app/api?user=adrielgg_motion&theme=dark&background=0d1117" alt="Last.fm now playing" width="600" />
 </a>
 
 </div>
