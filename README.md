@@ -28,7 +28,6 @@ Developer focused on the **open-source Android ecosystem**. I like tearing apps 
 
 - **Working on** — Maintaining & improving FOSS Android apps
 - **Learning** — Getting deeper into **Kotlin**
-- **Daily driver** — **ZorinOS** and **Android**
 - **Also** — Privacy nerd, FOSS enthusiast, runs on caffeine and hyperfocus
 
 <br/>
@@ -43,7 +42,7 @@ Developer focused on the **open-source Android ecosystem**. I like tearing apps 
   <img src="https://skillicons.dev/icons?i=kotlin,java,python,js,html&theme=dark" alt="Languages" />
 </a>
 
-#### Tools & Environment
+#### Tools
 
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=vscode,git,githubactions,linux&theme=dark" alt="Tools" />
@@ -64,18 +63,6 @@ Developer focused on the **open-source Android ecosystem**. I like tearing apps 
 <br/>
 
 <img src="https://nirzak-streak-stats.vercel.app/?user=adrielGGmotion&theme=github-dark-blue&hide_border=true&ring=FF5722&fire=FF5722&currStreakLabel=FF5722" alt="Streak Stats" />
-
-</div>
-
-<br/>
-
-## What I'm Listening To
-
-<div align="center">
-
-<a href="https://www.last.fm/user/adrielgg_motion">
-  <img src="https://lastfm-now-playing.vercel.app/api?user=adrielgg_motion&theme=dark&background=0d1117" alt="Last.fm now playing" width="600" />
-</a>
 
 </div>
 
