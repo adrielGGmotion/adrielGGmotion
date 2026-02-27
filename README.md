@@ -69,18 +69,6 @@ Developer focused on the **open-source Android ecosystem**. I like tearing apps 
 
 <br/>
 
-## Contribution Graph
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adrielGGmotion/adrielGGmotion/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/adrielGGmotion/adrielGGmotion/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/adrielGGmotion/adrielGGmotion/output/github-snake-dark.svg" />
-  </picture>
-</div>
-
-<br/>
-
 ## What I'm Listening To
 
 <div align="center">
