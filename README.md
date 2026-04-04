@@ -1,4 +1,4 @@
-<img src="banner.svg" width="100%" />
+<img src="terminal_ascii.svg" withd = "100%" />
 
 <div align="center">
 
