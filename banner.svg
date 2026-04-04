@@ -42,15 +42,13 @@
   </g>
 
   <!-- Name: "adriel" white, "GGmotion" orange -->
-  <text x="84" y="138" font-family="'Courier New', Courier, monospace" font-size="64" font-weight="700" letter-spacing="-1" fill="#ffffff">adriel</text>
-  <text x="84" y="138" font-family="'Courier New', Courier, monospace" font-size="64" font-weight="700" letter-spacing="-1" fill="transparent">adriel</text>
-
-  <text x="84" y="138" font-family="'Courier New', Courier, monospace" font-size="64" font-weight="700" fill="#ffffff">adriel</text>
-  <text x="84" y="138" dx="296" font-family="'Courier New', Courier, monospace" font-size="64" font-weight="700" fill="#D97757">GGmotion</text>
+  <text x="84" y="138" font-family="'Courier New', Courier, monospace" font-size="64" font-weight="700">
+    <tspan fill="#ffffff">adriel</tspan><tspan fill="#D97757">GGmotion</tspan>
+  </text>
 
   <!-- Divider line -->
   <rect x="84" y="155" width="500" height="1.5" fill="url(#lineGrad)"/>
 
   <!-- Subtitle -->
-  <text x="84" y="182" font-family="'Courier New', Courier, monospace" font-size="16" fill="#8b949e" letter-spacing="2">vibe coder · FOSS contributor · he/him</text>
+  <text x="84" y="182" font-family="'Courier New', Courier, monospace" font-size="16" fill="#8b949e" letter-spacing="2">FOSS contributor · he/him</text>
 </svg>
