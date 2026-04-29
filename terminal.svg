@@ -1,0 +1,139 @@
+<svg width="700" height="300" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ascii-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .terminal-text {
+      font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 14px;
+      fill: #a9b1d6;
+    }
+    .label { fill: #7dcfff; font-weight: bold; }
+    .value { fill: #c0caf5; }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .blinking { animation: blink 1.2s step-end infinite; }
+  </style>
+
+  <!-- Window Background -->
+  <rect width="700" height="300" rx="12" fill="#1a1b26"/>
+  
+  <!-- Header / Title Bar -->
+  <path d="M0 12C0 5.37258 5.37258 0 12 0H688C694.627 0 700 5.37258 700 12V35H0V12Z" fill="#16161e"/>
+  
+  <!-- Window Border -->
+  <rect width="700" height="300" rx="12" fill="none" stroke="#3b4261" stroke-width="2"/>
+  
+  <!-- Window Controls -->
+  <circle cx="25" cy="17.5" r="6" fill="#ff5f56"/>
+  <circle cx="45" cy="17.5" r="6" fill="#ffbd2e"/>
+  <circle cx="65" cy="17.5" r="6" fill="#27c93f"/>
+  
+  <!-- ASCII Art (Fades in and slides right slightly) -->
+  <g opacity="0" transform="translate(-10, 0)">
+    <animate attributeName="opacity" values="0;1" begin="0.1s" dur="0.8s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="-10,0; 0,0" begin="0.1s" dur="0.8s" fill="freeze"/>
+    <text x="25" y="75" font-family="monospace" font-size="6" fill="url(#ascii-gradient)" font-weight="bold" opacity="0.9">
+      <tspan x="25" dy="0">++++++++++++++++++++++******++++++*********************</tspan>
+      <tspan x="25" dy="6">++++++++++++++++++++***+;;:,,,,,,:;;+******************</tspan>
+      <tspan x="25" dy="6">++++++++++++++++++**+;:,,..,,,:,,,,.,;*****************</tspan>
+      <tspan x="25" dy="6">+++++++++++++++++*+:,..,,,,,,,,,,,,,,.:****************</tspan>
+      <tspan x="25" dy="6">++++++++++++++++*+,...,,,,,,,,,,,,,,,.,;***************</tspan>
+      <tspan x="25" dy="6">+++++++++++++++**;...,,,:;;;:,,,,,,,,,,:***************</tspan>
+      <tspan x="25" dy="6">++++++++++++++++*+;:,::;++++;:,::,,,,,,,+**************</tspan>
+      <tspan x="25" dy="6">+++++++++++++++++**+::;;+++++;;:::::++:,***************</tspan>
+      <tspan x="25" dy="6">+++++++++++++++++**+:::::;++++*+::++;+;,+**************</tspan>
+      <tspan x="25" dy="6">+++++++++++++++++*+;,::,,:;;;+**+;*+;+;:***************</tspan>
+      <tspan x="25" dy="6">+++++++++++++++++*;+;:;;:,:;++**+;+++*+:+**************</tspan>
+      <tspan x="25" dy="6">++++++++++++++++++*++;+;;::;+**+;;;+***++*************+</tspan>
+      <tspan x="25" dy="6">++++++++++++++++++**+;+;:,,,:+;++;:;****+************++</tspan>
+      <tspan x="25" dy="6">+++++++++++++++++++***;,,,:,,::::,,;*****++*********+++</tspan>
+      <tspan x="25" dy="6">+++++++++++++++++**++;++:,:;:,,,,,:+++****+++******++++</tspan>
+      <tspan x="25" dy="6">++++++++++++++++*+;::+*;:.,,:,,,,:;+++**+++++++*****+++</tspan>
+      <tspan x="25" dy="6">++++++++++++++*+;:::;*+::,.;+:,,,,:;+++++;;++++++**++++</tspan>
+      <tspan x="25" dy="6">+++++++++++++*+;::;;+*+::::**:,,::;;;;++++;;;+++++++**+</tspan>
+      <tspan x="25" dy="6">++++++++++++++:::;;;+**;;;+*;:::::;;:;+++;;++++++++++++</tspan>
+      <tspan x="25" dy="6">++++++++++++;:;;::::+++**+*+:,:::::::;;;;;;++++++***+++</tspan>
+      <tspan x="25" dy="6">;;;;+++++;;::;;::::;;+++***:,,:::;;::;;;;;++++++*****+;</tspan>
+      <tspan x="25" dy="6">;;;;;;+;:::;;;::::::;+++**;,,::;;;;;;;;;;;+++++++*****;</tspan>
+      <tspan x="25" dy="6">;;;;;;:::;;;;::,,:::;++**:.,::;;;;;;;;::;;++++++******+</tspan>
+      <tspan x="25" dy="6">;;;;;:::::;;::,,,,:::;++*:,,::;;;;;;::,:;;;+++++******+</tspan>
+      <tspan x="25" dy="6">;;;;::::::::,,,::,,:::;+++,,:::;;;;::,:;;;;+++++******;</tspan>
+      <tspan x="25" dy="6">;;;:,::::;;;::;:::,,:::;++;,,::;;;::::;;;;+++++++****+:</tspan>
+      <tspan x="25" dy="6">;;::,,:::::::;::::::,:::;++;,,:::::::;;;++++++++*****;:</tspan>
+    </text>
+  </g>
+
+  <!-- Terminal Content -->
+  <g class="terminal-text">
+    <!-- Command Line -->
+    <text x="280" y="85">
+      <tspan fill="#73daca" font-weight="bold">~/adriel</tspan>
+      <tspan fill="#7aa2f7" font-weight="bold"> $ </tspan>
+      <tspan fill="#c0caf5" opacity="0">whoami<animate attributeName="opacity" values="0;1" begin="0.4s" dur="0.1s" fill="freeze"/></tspan>
+    </text>
+
+    <!-- Response Lines -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,5; 0,0" begin="1.2s" dur="0.3s" fill="freeze"/>
+      <text x="280" y="115" font-weight="bold">
+        <tspan fill="#7aa2f7">adriel</tspan>
+        <tspan fill="#a9b1d6">@</tspan>
+        <tspan fill="#7aa2f7">workspace</tspan>
+      </text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,5; 0,0" begin="1.3s" dur="0.3s" fill="freeze"/>
+      <text x="280" y="130" fill="#565f89">----------------</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.4s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,5; 0,0" begin="1.4s" dur="0.3s" fill="freeze"/>
+      <text x="280" y="155" class="label">Name:</text>
+      <text x="370" y="155" class="value">Adriel</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,5; 0,0" begin="1.5s" dur="0.3s" fill="freeze"/>
+      <text x="280" y="175" class="label">Role:</text>
+      <text x="370" y="175" class="value">Indie Developer</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,5; 0,0" begin="1.6s" dur="0.3s" fill="freeze"/>
+      <text x="280" y="195" class="label">Focus:</text>
+      <text x="370" y="195" class="value">UI/UX • Android • Code Quality</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.7s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,5; 0,0" begin="1.7s" dur="0.3s" fill="freeze"/>
+      <text x="280" y="215" class="label">Learning:</text>
+      <text x="370" y="215" class="value">Kotlin Multiplatform &amp; Compose</text>
+    </g>
+
+    <!-- New Prompt -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.9s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,5; 0,0" begin="1.9s" dur="0.3s" fill="freeze"/>
+      <text x="280" y="250">
+        <tspan fill="#73daca" font-weight="bold">~/adriel</tspan>
+        <tspan fill="#7aa2f7" font-weight="bold"> $ </tspan>
+        <tspan fill="#c0caf5" class="blinking">█</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
