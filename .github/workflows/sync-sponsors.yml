@@ -1,0 +1,38 @@
+name: Sync Sponsors
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Query sponsors
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          DATA=$(curl -s -H "Authorization: bearer $GH_TOKEN" -H "Content-Type: application/json" \
+            -d '{
+              "query": "query { user(login: \"adrielGGmotion\") { sponsorshipsAsMaintainer(first: 100) { nodes { sponsorEntity { ... on User { login avatarUrl url } ... on Organization { login avatarUrl url } } } } } }"
+            }' https://api.github.com/graphql)
+
+          echo "$DATA" | jq -r '
+            [.data.user.sponsorshipsAsMaintainer.nodes[].sponsorEntity
+            | select(. != null)
+            | { login, avatar_url: .avatarUrl, url }]
+            as $sponsors | { sponsors: $sponsors }
+          ' > sponsors.json
+
+      - name: Commit JSON
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sponsors.json
+          git diff --cached --quiet || git commit -m "chore: update sponsors.json"
+          git push
