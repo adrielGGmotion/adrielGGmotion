@@ -1,3 +1,19 @@
 {
-  "sponsors": []
+  "sponsors": [
+    {
+      "login": "nyxiereal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98595166?u=675513feb9e2fa04e490532f888a71688f8694d1&v=4",
+      "url": "https://github.com/nyxiereal"
+    },
+    {
+      "login": "mochachiino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100048419?v=4",
+      "url": "https://github.com/mochachiino"
+    },
+    {
+      "login": "siaggiannis",
+      "avatar_url": "https://avatars.githubusercontent.com/u/288086114?v=4",
+      "url": "https://github.com/siaggiannis"
+    }
+  ]
 }
