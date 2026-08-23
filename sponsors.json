@@ -1,11 +1,6 @@
 {
   "sponsors": [
     {
-      "login": "nyxiereal",
-      "avatar_url": "https://avatars.githubusercontent.com/u/98595166?u=675513feb9e2fa04e490532f888a71688f8694d1&v=4",
-      "url": "https://github.com/nyxiereal"
-    },
-    {
       "login": "Kampfdackel5",
       "avatar_url": "https://avatars.githubusercontent.com/u/26501590?u=2d92c780b777313b689c7196d52b7ed6415e9a76&v=4",
       "url": "https://github.com/Kampfdackel5"
@@ -24,11 +19,6 @@
       "login": "arnaav11",
       "avatar_url": "https://avatars.githubusercontent.com/u/87122819?v=4",
       "url": "https://github.com/arnaav11"
-    },
-    {
-      "login": "mochachiino",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100048419?v=4",
-      "url": "https://github.com/mochachiino"
     },
     {
       "login": "tyrunny1903",
@@ -61,11 +51,6 @@
       "url": "https://github.com/klatr"
     },
     {
-      "login": "siaggiannis",
-      "avatar_url": "https://avatars.githubusercontent.com/u/288086114?v=4",
-      "url": "https://github.com/siaggiannis"
-    },
-    {
       "login": "JiroKeshi",
       "avatar_url": "https://avatars.githubusercontent.com/u/311631335?v=4",
       "url": "https://github.com/JiroKeshi"
@@ -74,6 +59,11 @@
       "login": "wiredcloth",
       "avatar_url": "https://avatars.githubusercontent.com/u/313905848?v=4",
       "url": "https://github.com/wiredcloth"
+    },
+    {
+      "login": "ctfface",
+      "avatar_url": "https://avatars.githubusercontent.com/u/320056990?v=4",
+      "url": "https://github.com/ctfface"
     }
   ]
 }
