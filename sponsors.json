@@ -1,6 +1,11 @@
 {
   "sponsors": [
     {
+      "login": "dryter97",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16638986?v=4",
+      "url": "https://github.com/dryter97"
+    },
+    {
       "login": "begulathemoai",
       "avatar_url": "https://avatars.githubusercontent.com/u/168481705?u=fc3d580d4904666314c29e0de7721a800207fb06&v=4",
       "url": "https://github.com/begulathemoai"
@@ -16,6 +21,11 @@
       "url": "https://github.com/Hutchyy9"
     },
     {
+      "login": "fivespine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193659578?v=4",
+      "url": "https://github.com/fivespine"
+    },
+    {
       "login": "klatr",
       "avatar_url": "https://avatars.githubusercontent.com/u/278861550?u=29f5a61f4a5f01518e04b011c2c854be3106bd96&v=4",
       "url": "https://github.com/klatr"
@@ -29,6 +39,11 @@
       "login": "Wjdner00",
       "avatar_url": "https://avatars.githubusercontent.com/u/322529639?v=4",
       "url": "https://github.com/Wjdner00"
+    },
+    {
+      "login": "sapple-pk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/326297977?v=4",
+      "url": "https://github.com/sapple-pk"
     }
   ]
 }
