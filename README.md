@@ -19,7 +19,7 @@
   <tr>
     <td>
       <h2>About me</h2>
-      <p><b>Adriel O'Connel</b> — 26, South American, ADHD.</p>
+      <p><b>Adriel O'Connel</b> — 27, South American, ADHD.</p>
       <p>Contributor at <a href="https://github.com/MetrolistGroup/Metrolist"><b>Metrolist</b></a> — a modern YouTube Music client for Android. Mostly through code, reviews, and general project support.</p>
       <p>I don't have much to say, but if you find information about me just put it there.</p>
     </td>
