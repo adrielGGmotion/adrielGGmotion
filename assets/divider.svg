@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="1200" height="40">
+<defs>
+    <filter id="liquid" x="-60%" y="-150%" width="220%" height="400%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.009" numOctaves="2" seed="7" result="noise"/>
+      <feOffset in="noise" dx="0" dy="0" result="flow">
+        <animate attributeName="dx" values="0;420;0" dur="40s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+        <animate attributeName="dy" values="0;-160;0" dur="26s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+      </feOffset>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="soft"/>
+      <feDisplacementMap in="soft" in2="flow" scale="60" xChannelSelector="R" yChannelSelector="G" result="warped"/>
+      <feGaussianBlur in="warped" stdDeviation="3" result="smooth"/>
+      <feComponentTransfer in="smooth">
+        <feFuncR type="gamma" exponent="1.6" amplitude="1.2"/>
+        <feFuncG type="gamma" exponent="1.6" amplitude="1.2"/>
+        <feFuncB type="gamma" exponent="1.6" amplitude="1.2"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="grainW" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="3" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.32 -0.06"/>
+    </filter>
+    <filter id="grainB" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="9" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 -0.1"/>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="40" rx="4"/></clipPath>
+  </defs>
+<g clip-path="url(#frame)"><rect width="1200" height="40" fill="#000"/>
+<g filter="url(#liquid)" fill="none" stroke-linecap="round"><g><animateTransform attributeName="transform" type="translate" values="0 0;-60 6;0 0" dur="24s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+<path d="M-50 20 C 200 8, 400 32, 650 18 S 1000 6, 1250 22" stroke="#e8e8e8" stroke-width="5"/>
+<path d="M-50 27 C 220 16, 420 38, 680 25 S 1000 14, 1250 29" stroke="#6a6a6a" stroke-width="4"/>
+<path d="M-50 12 C 180 2, 380 24, 620 10 S 980 0, 1250 13" stroke="#9a9a9a" stroke-width="2"/>
+</g></g>
+<rect width="1200" height="40" filter="url(#grainW)"/><rect width="1200" height="40" filter="url(#grainB)"/></g></svg>
