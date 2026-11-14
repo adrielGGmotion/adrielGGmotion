@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 48" width="1200" height="48">
+<defs><filter id="pen" x="-2%" y="-40%" width="104%" height="180%">
+<feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="3" result="w"><animate attributeName="seed" values="3;6;9;4" dur="1.2s" calcMode="discrete" repeatCount="indefinite"/></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="4" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3.2 0 0 0 2.5" result="ga"/>
+<feComposite in="d" in2="ga" operator="in"/></filter></defs>
+<g filter="url(#pen)" fill="none" stroke-linecap="round">
+<path d="M20 18 C300 15 600 20 900 16 S 1150 19 1180 18" stroke="#8FB89A" stroke-width="2.6"/>
+<path d="M40 22 C320 20 640 24 940 21" stroke="#8FB89A" stroke-width="1.1" opacity="0.4"/>
+<g stroke="#8FB89A" stroke-width="1.5" opacity="0.45"><path d="M140 32 L210 32 M260 32 L300 32 M800 30 L870 30 M960 34 L1010 34 M380 38 L440 38"/></g>
+<g stroke="#e0782a" stroke-width="2.2" opacity="0.85"><animateTransform attributeName="transform" type="translate" values="0 0;5 0;0 0" dur="5s" repeatCount="indefinite"/><path d="M560 30 L640 30 M578 38 L622 38"/></g>
+</g></svg>
