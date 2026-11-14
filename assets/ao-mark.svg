@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="56 52 242 162" width="484" height="324"><defs><filter id="pencilL" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3" result="w"/>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="2" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="7" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3.2 0 0 0 2.5" result="ga"/>
+<feComposite in="d" in2="ga" operator="in"/>
+</filter></defs><g filter="url(#pencilL)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 178 L115 62 L158 172" stroke="#8FB89A" stroke-width="3.8" opacity="0.95"/>
+<path d="M90 138 C108 135 128 140 142 137" stroke="#8FB89A" stroke-width="3.4" opacity="0.95"/>
+<path d="M158 172 C175 192 190 183 225 183 A48 48 0 0 0 225 87 A48 48 0 0 0 225 183 A47 47 0 0 0 252 170" stroke="#e0782a" stroke-width="3.8" opacity="0.95"/>
+<path d="M70 178 L115 62 L158 172" stroke="#8FB89A" stroke-width="1.4" opacity="0.45" transform="translate(2.5,1.5)"/>
+<path d="M158 172 C175 192 190 183 225 183 A48 48 0 0 0 225 87 A48 48 0 0 0 225 183 A47 47 0 0 0 252 170" stroke="#e0782a" stroke-width="1.4" opacity="0.5" transform="translate(2.5,1.5)"/>
+<path d="M169.8 117.1 L160.3 114 M190.9 88.1 L185 80 M225 77 L225 64 M259.1 88.1 L266.2 78.4 M280.2 117.1 L289.7 114 M280.2 152.9 L289.7 156" stroke="#e0782a" stroke-width="2.8" opacity="0.9"/>
+<path d="M200 128 L222 104 M205 140 L236 108 M215 150 L248 114 M228 156 L254 128 M242 158 L258 142" stroke="#e0782a" stroke-width="1.3" opacity="0.45"/>
+<path d="M64 196 C120 194 200 197 282 195" stroke="#8FB89A" stroke-width="2.2" opacity="0.6"/>
+<path d="M110 205 L140 205 M180 205 L230 205" stroke="#8FB89A" stroke-width="1.5" opacity="0.4"/>
+</g></svg>
